@@ -31,7 +31,7 @@ while(true){
     console.log("Tipo: "+tipo)
 
     var carac //característica atríbuida relacionada à idade do vinho, sendo sua safra
-    var idade = parseInt(prompt("Qual a idade do vinho? Caso não tenha colocado um número, será considerado um vinho de 2025(Juvenil)."))
+    var idade = parseInt(prompt("Qual a idade do vinho? Caso não tenha colocado um número, será considerado um indefinido."))
     if (idade===NaN){ //caso não tenha nenhum número inteiro como idade, a idade será considerada 2025 - Juvenil
         var idade=2025
     }
@@ -45,7 +45,7 @@ while(true){
         carac = "Antigo"
     }
     console.log("Safra: "+idade+" -- "+carac)
-    var estoque = parseInt(prompt("Quantos vinhos estão disponíveis no estoque? (Caso o número seja 5 ou menor, o estoque será considerado baixo.)"))
+    var estoque = parseInt(prompt("Quantos vinhos estão disponíveis no estoque? (Caso o número seja 5 ou menor, o estoque será considerado baixo. E caso não tenha número, será condierado indefinido.)"))
     if (estoque===NaN){ //não consigo fazer com que variáveis declaradas indefinidas se tornem em numeros
         var estoque = 30 //eu também tentei (estoque = 30), aí deixei (var estoque = 30)
     }
